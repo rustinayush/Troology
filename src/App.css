@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.farmer-detail {
+  width: 100vw;
+  height: 100vh;
+}
+
+.table-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

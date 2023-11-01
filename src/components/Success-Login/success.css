@@ -1,0 +1,23 @@
+.success-login {
+  display: inline-flex;
+  padding: 72px 36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 4px;
+  background: var(--white, #ccc);
+  margin-top: 50px;
+}
+.App {
+  display: flex;
+  justify-content: center;
+}
+.contents > img {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+}
+.contents > p {
+  margin-left: 0px;
+}
