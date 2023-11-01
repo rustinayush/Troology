@@ -1,3 +1,4 @@
+/* Base styles (for larger screens) */
 .left-part {
   width: 454px;
   height: 583px;
@@ -5,6 +6,7 @@
   border-radius: 8px 0px 0px 8px;
   background: var(--grey-50-f-9-f-9-f-9, #f0f1f8);
 }
+
 .box {
   width: 96px;
   height: 48px;
@@ -12,15 +14,18 @@
   margin-top: 36px;
   margin-left: 36px;
 }
+
 .right-part {
   width: 470px;
   height: 583px;
   flex-shrink: 0;
   border-radius: 8px 0px 0px 8px;
 }
+
 .right-part > img {
   margin-left: 400px;
 }
+
 .right-part > h4 {
   color: #000;
   font-family: Poppins;
@@ -30,6 +35,7 @@
   line-height: normal;
   margin-right: 130px;
 }
+
 .right-part > p {
   width: 276px;
   color: var(--text-color-dark-text, #4d4d4d);
@@ -40,6 +46,7 @@
   line-height: normal;
   margin-left: 50px;
 }
+
 .right-part > h6 {
   color: var(--text-color-dark-text, #4d4d4d);
   font-family: Poppins;
@@ -49,12 +56,14 @@
   line-height: normal;
   margin-right: 230px;
 }
+
 .login-form {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
+
 .Contact {
   display: flex;
   flex-direction: column;
@@ -62,6 +71,7 @@
   gap: 8px;
   margin-left: 50px;
 }
+
 .Contact > input {
   width: 408px;
   height: 48px;
@@ -69,9 +79,9 @@
   border-radius: 8px;
   border: 1px solid #000;
 }
+
 .Contact > input ::placeholder {
   color: var(--neutral-500-p, #878896);
-  /* Body 1 */
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
@@ -79,15 +89,18 @@
   line-height: normal;
   letter-spacing: 0.5px;
 }
+
 .frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
 }
+
 .frame > h4 {
   margin-left: 52px;
 }
+
 .otp {
   width: 408px;
   height: 48px;
@@ -101,6 +114,7 @@
   border-radius: 3px;
   cursor: pointer;
 }
+
 .otp > p {
   display: flex;
   height: 19px;
@@ -115,65 +129,96 @@
   font-weight: 500;
   line-height: normal;
 }
+
 .content {
   margin-top: 80px;
 }
+
 .content > h4 {
   margin-right: 170px;
   margin-left: 100px;
 }
+
 .content > p {
   margin-left: 100px;
 }
 
+/* Media queries for tablet */
 @media (max-width: 768px) {
-  .left-part {
-    width: 100%;
-    height: auto;
-  }
-
+  .left-part,
+  .right-part,
   .box {
-    margin: 20px auto;
-  }
-
-  .right-part {
     width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
   .right-part > img {
-    margin: 0;
+    margin-left: 0;
   }
 
   .right-part > h4 {
-    margin: 0;
+    margin-right: 0;
   }
 
   .right-part > p {
-    width: 100%;
-    margin: 0;
+    margin-left: 0;
   }
 
-  /* Add more responsive styles as needed */
+  .right-part > h6 {
+    margin-right: 0;
+  }
+
+  .Contact > input {
+    width: 100%;
+  }
+
+  .frame > h4 {
+    margin-left: 0;
+  }
+
+  .otp {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
-/* Adjust styles for screens with a maximum width of 480px (mobile) */
+/* Media queries for mobile */
 @media (max-width: 480px) {
-  .left-part {
-  }
-
+  .left-part,
+  .right-part,
   .box {
-  }
-
-  .right-part {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 
   .right-part > img {
+    margin-left: 0;
   }
 
   .right-part > h4 {
+    margin-right: 0;
   }
 
   .right-part > p {
+    margin-left: 0;
+  }
+
+  .right-part > h6 {
+    margin-right: 0;
+  }
+
+  .Contact > input {
+    width: 100%;
+  }
+
+  .frame > h4 {
+    margin-left: 0;
+  }
+
+  .otp {
+    width: 100%;
+    margin-left: 0;
   }
 }
